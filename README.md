@@ -1,63 +1,18 @@
 # BlueMotion
 
-> Bringing the nostalgia of classic car audio displays into the modern Android era.
+> Drive Through Time.
 
-BlueMotion is an open-source Android music visualizer inspired by the iconic animated displays found in early-2000s car stereos.
+BlueMotion is an ambient in-car visual experience inspired by animated car-audio displays of the early 2000s.
 
-Rather than recreating the original pixel-for-pixel, BlueMotion reimagines the experience as if those legendary displays had continued evolving into today. BlueMotion is designed to be remembered, not noticed.
+## Current milestone
 
----
+**v0.2 — The Living Ocean**
 
-## Vision
+Immediate goal: replace placeholder artwork, improve ocean motion, and build the first believable no-loop behavior system.
 
-Imagine starting your car late at night.
+## Structure
 
-The dashboard glows with deep blue ocean light.
-
-Dolphins slowly glide across the display.
-
-Soft bubbles drift upward.
-
-The spectrum analyzer gently reacts to your music.
-
-No distractions.
-
-Just calm motion.
-
-Just nostalgia.
-
----
-
-## Planned Features
-
-- Animated underwater scenes
-- Pioneer-inspired visual style
-- Real-time music information
-- Beat-reactive animations
-- Spectrum analyzer
-- Automatic night mode
-- Multiple visual themes
-- Android head unit support
-
----
-
-## Project Status
-
-🚧 Early Design Phase
-
-Currently creating artwork, animations, and interface specifications.
-
----
-
-## Roadmap
-
-- [ ] Visual identity
-- [ ] Hero artwork
-- [ ] Animation prototype
-- [ ] Desktop prototype
-- [ ] Android application
-- [ ] First install on a real head unit
-
----
-
-*"Preserving the feeling—not just the pixels."*
+- `assets/` production artwork
+- `prototype/` browser prototype
+- `docs/` design and engineering notes
+- `android/` future Android app
