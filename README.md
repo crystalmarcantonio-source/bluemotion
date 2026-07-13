@@ -4,7 +4,7 @@
 
 BlueMotion is an open-source Android music visualizer inspired by the iconic animated displays found in early-2000s car stereos.
 
-Rather than recreating the original pixel-for-pixel, BlueMotion reimagines the experience as if those legendary displays had continued evolving into today.
+Rather than recreating the original pixel-for-pixel, BlueMotion reimagines the experience as if those legendary displays had continued evolving into today. BlueMotion is designed to be remembered, not noticed.
 
 ---
 
