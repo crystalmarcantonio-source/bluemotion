@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BlueMotion v0.4.2a — Visibility Engine</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main id="app">
+    <section id="ocean">
+      <div id="surface-shimmer"></div>
+      <div id="light-rays-a" class="light-rays"></div>
+      <div id="light-rays-b" class="light-rays"></div>
+      <div id="far-haze"></div>
+      <div id="bottom-haze"></div>
+      <div id="bottom-particles"></div>
+      <div id="eelgrass-layer" aria-hidden="true"></div>
+
+      <div id="far-particles" class="particle-layer"></div>
+      <div id="mid-particles" class="particle-layer"></div>
+
+      <div id="dolphin-layer">
+        <svg id="atlas" viewBox="0 0 560 220" aria-label="Temporary Atlas">
+          <defs>
+            <linearGradient id="atlasBody" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#8fe1ff"/>
+              <stop offset="38%" stop-color="#3d92ca"/>
+              <stop offset="76%" stop-color="#12477a"/>
+              <stop offset="100%" stop-color="#071f3b"/>
+            </linearGradient>
+          </defs>
+          <g>
+            <path d="M55 128 C108 63 218 39 338 67 C402 82 444 105 484 112 C510 117 531 111 550 99 C539 119 523 133 498 140 C454 151 419 145 379 143 C307 139 245 163 175 168 C120 172 78 154 55 128Z" fill="url(#atlasBody)"/>
+            <path d="M341 68 C354 36 374 18 390 19 C381 43 385 57 403 74Z" fill="#23669f"/>
+            <path d="M196 147 C178 178 160 200 144 204 C149 177 155 158 166 144Z" fill="#1b5e96"/>
+            <path d="M258 146 C245 179 230 197 213 201 C220 173 230 154 242 141Z" fill="#226ca8"/>
+            <g id="tail">
+              <path d="M58 128 C30 115 12 97 5 77 C31 84 51 94 71 110Z" fill="#174f84"/>
+              <path d="M58 128 C31 142 13 159 6 179 C31 171 52 159 71 141Z" fill="#124572"/>
+            </g>
+            <circle cx="445" cy="103" r="5.2" fill="#d7f5ff"/>
+            <circle cx="445" cy="103" r="2.1" fill="#03101d"/>
+          </g>
+        </svg>
+      </div>
+
+      <div id="near-particles" class="particle-layer"></div>
+      <div id="near-bubbles"></div>
+      <div id="glass-glint"></div>
+
+      <section id="metadata">
+        <div id="artist">Fleetwood Mac</div>
+        <div id="track">Dreams</div>
+        <div id="album">Rumours</div>
+      </section>
+
+      <section id="analyzer"></section>
+      <div id="clock"></div>
+      <div id="status">Current Engine initializing…</div>
+
+      <div id="progress-wrap">
+        <span>02:14</span>
+        <div id="progress"><div></div></div>
+        <span>04:17</span>
+      </div>
+    </section>
+
+    <aside id="controls">
+      <label>Ocean Time
+        <input id="time-slider" type="range" min="0" max="24" step=".05" value="23">
+      </label>
+      <button id="current-time">Use current time</button>
+      <button id="atlas-now">Invite Atlas</button>
+      <label>Current
+        <select id="current-mode">
+          <option value="auto">Automatic</option>
+          <option value="calm">Calm</option>
+          <option value="left">Gentle Left</option>
+          <option value="right">Gentle Right</option>
+          <option value="rising">Rising Water</option>
+          <option value="deep">Deep Current</option>
+        </select>
+<label>Visibility <select id='visibility-mode'><option value='auto'>Automatic</option><option value='crystal'>Crystal Clear</option><option value='normal'>Typical Cape</option><option value='mist'>Morning Mist</option><option value='deep'>Deep Haze</option></select></label>
+      </label>
+      <button id="hints-toggle">Hints: On</button>
+      <button id="response-demo">Show Response</button>
+      <span id="stage-label"></span>
+    </aside>
+  </main>
+
+  <script src="js/bluemotion.js"></script>
+</body>
+</html>
